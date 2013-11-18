@@ -1,0 +1,33 @@
+<div id="content">
+	
+	<div id="subhead">
+		<%= @tour.name %>
+	</div>
+	
+	<div class="detaillink">
+		
+		<li class="bookinglink">
+			<a href="Hotels.php">Hotels</a>
+		</li>
+
+		<li class="bookinglink">
+			<a href="IncludeExclude.php" >Include/Exclude </a>
+		</li>
+
+		<li class="bookinglink">
+			<%= link_to "BookNow" %>
+		</li>
+	
+	</div>
+
+	<div>
+		<p>
+			<%= @tour.text %>
+		</p>
+	</div>
+	
+	<div class="morepackage text">
+			<%= link_to "Book Now", new_destination_tour_booking_url(@tour.id,1) %> 
+	</div>
+
+</div>

@@ -1,0 +1,76 @@
+<div id="content">
+		<div id="subhead">
+			Destination Packages
+		</div>
+		<div class="homepackage">
+			<% @packagelocation.each_with_index do |pl,index| %>
+				<% if index == 0 || index % 4 == 0 %>
+				<li class="homepackagediv">
+					<div>
+						<%= image_tag(pl.image, :alt => "", :class => "packageimg") %>
+					</div>
+					<div class="packagename">
+						<%= pl.location %>
+					</div>
+					<div class="packagetext">
+						We offers a large verity of <%=pl.location %> tours
+					</div>
+					<div class="packagelink">
+						<%= link_to "Click here for a list of tours", destination_tours_path(pl.id) %>
+					</div>
+				</li>
+				<% end %>
+
+				<% if index == 1  || index % 4 == 1 %>
+				<li class="homepackagediv">
+					<div>
+						<%= image_tag(pl.image, :alt => "", :class => "packageimg") %>
+					</div>
+					<div class="packagename leh-ladakh">
+						<%= pl.location %>
+					</div>
+					<div class="packagetext leh-ladakhtext">
+						We offers a large verity of <%=pl.location %> tours
+					</div>
+					<div class="packagelink leh-ladakh">
+						<%= link_to "Click here for a list of tours", destination_tours_path(pl.id) %>
+					</div>
+				</li>
+				<% end %>
+
+				<% if index == 2  || index % 4 == 2 %>
+				<li class="homepackagediv">
+					<div>
+						<%= image_tag(pl.image, :alt => "", :class => "packageimg") %>
+					</div>
+					<div class="packagename kerala">
+						<%= pl.location %>
+					</div>
+					<div class="packagetext keralatext">
+						We offers a large verity of <%=pl.location %> tours
+					</div>
+					<div class="packagelink kerala">
+						<%= link_to "Click here for a list of tours", destination_tours_path(pl.id) %>
+					</div>
+				</li>
+				<% end %>
+
+				<% if index == 3 || index % 4 == 3 %>
+					<li class="homepackagediv">
+						<div>
+							<%= image_tag(pl.image, :alt => "", :class => "packageimg") %>
+						</div>
+						<div class="packagename Goa">
+							<%= pl.location %>
+						</div>
+						<div class="packagetext Goatext">
+							We offers a large verity of <%=pl.location %> tours
+						</div>
+						<div class="packagelink Goa">
+							<%= link_to "Click here for a list of tours", destination_tours_path(pl.id) %>	
+						</div>
+					</li>
+				<% end %>
+			<% end %>
+		</div>
+</div>

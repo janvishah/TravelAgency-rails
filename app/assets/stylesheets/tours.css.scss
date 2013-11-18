@@ -1,0 +1,71 @@
+// Place all the styles related to the tours controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.data
+{
+	margin-right:20px;
+	background-color:#FAF0DB;
+}
+
+.name
+{
+	padding-top:20px;
+	margin-bottom:15px;
+	font-size:20px;
+	color:#E45551;
+	margin-top:40px;
+}
+
+.tourdara
+{
+	font-size:16px;
+	margin-bottom:20px;
+}
+.place
+{
+	padding-bottom:20px;
+}
+
+.tourlink
+{
+	float:right;
+}
+.tourdata>div>li
+{
+	display:inline-block;
+}
+.place>a:visited, .detaillink>li>a:visited
+{
+	color:rgba(86, 64, 202, 0.94);
+}
+
+
+.detaillink
+{
+	font-size:16px;
+
+}
+.detaillink>li
+{
+	display : inline-block;
+}
+.bookinglink
+{
+	margin: 20px 20px 20px 0;	
+	font-size: 20px;
+}
+
+.text
+{
+	padding-bottom: 50px;
+}
+
+.fname
+{
+	margin: 20px 0 20px 0;
+}
+.forminfo
+{
+	position:absolute;
+	left:370px;
+}

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  packagelocation_id: 
+  name: MyString
+  days: 
+  nights: 
+  date: 2013-11-11 16:27:19
+  text: MyText
+
+two:
+  packagelocation_id: 
+  name: MyString
+  days: 
+  nights: 
+  date: 2013-11-11 16:27:19
+  text: MyText

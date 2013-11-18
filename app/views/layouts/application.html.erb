@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Information Travels</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="page">
+		<section>
+			<%= image_tag("logo.jpg", :alt => "", :class => "logoimage") %>
+			
+			<div id="heading">
+				Information Travels
+			</div>
+			<div id="underhead">
+				Luxury Holiday Made Affordable
+			</div>				
+		</section>
+		<section>
+			<nav>
+				<li class="navmenu">
+					<%= link_to 'Home',root_url %>
+				</li>
+				<li class="navmenu">
+					<a href="India Tourism.php">Indian Tourism</a>
+				</li>	
+				<li class="navmenu">
+					<%= link_to 'Destination', :controller => :destinations, :action => :index %>
+				</li>
+				<li class="navmenu">
+					<a href="ContactUs.php" >ContactUs</a>
+				</li>	
+			</nav>
+		</section>
+		<div id="slidediv">
+			<%= image_tag("Home/pr1.jpg", :alt => "",:class => "imgslide") %>						
+		</div>
+		
+		<%= yield %>
+	</div>
+</body>
+</html>

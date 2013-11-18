@@ -1,0 +1,74 @@
+body
+{
+	margin : 0 auto;
+	background-color:#16385D;
+	background-repeat: repeat;
+}
+.page
+{
+	width:1000px;
+	margin : 0 auto;
+	background-color: white;
+}
+.logoimage
+{
+	float: left;
+	height: 100px;
+	width:300px;
+}
+#heading
+{
+	font:40px 'museo_slab300';
+	color:#E45551;
+	padding-top: 10px;
+	margin-left: 660px;
+	margin-right: 20px;	
+}
+#underhead
+{
+	font-family: 'museo_slab300';
+	color:#16385D;
+	font-size : 16px;
+	padding-right:20px;
+	padding-bottom:20px;
+	font-style: italic;
+	margin-left:760px;
+	margin-right: 5px;	
+}
+nav
+{
+	height:  60px;
+	background-color: green;	
+	margin-top:10px;
+}
+.navmenu
+{
+	display:inline-block;
+	color: white;
+	font-size: 20px;
+	font-family: 'helvatica';
+	padding: 20px 20px;
+}
+.navmenu>a:link
+{
+	color: white;
+	text-decoration: none;
+}
+.imgslide
+{
+	width:980px;
+	height:400px;
+}
+#slidediv
+{	
+	text-align: center;
+	height:400px;
+	overflow:hidden;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+a:visited
+{
+	color:white;
+}
+

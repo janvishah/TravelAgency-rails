@@ -1,0 +1,64 @@
+<div id="content">
+	<div id="subhead">
+		 Booking Form
+	</div>
+	<%= form_for Traveller.new, url: {action: "create"} do |f| %>
+		<div class="form">
+			<div class="fname">
+				<span>
+					Name:
+				</span>
+				<span class="forminfo">					
+					<%= f.text_field :name %>
+				</span>
+			</div>
+				
+			<div class="fname">
+				<span>
+					Address:
+				</span>
+				<span class="forminfo">
+					
+					<%= f.text_field :address %>
+				</span>
+			</div>
+			<div class="fname">
+				<span>
+					Ph.No:
+				</span>
+				<span class="forminfo">
+					
+					<%= f.text_field :ph_no %>
+				</span>
+			</div>
+			<div class="fname">
+				<span>
+					Email:
+				</span>
+				<span class="forminfo"> 
+					
+					<%= f.text_field :email %>
+				</span>
+			</div>
+			<div class="fname">
+				<span>
+					Children:
+				</span>
+				<span class="forminfo">
+					<%= f.text_field :children %>
+				</span>
+			</div>
+			<div class="fname">
+				<span>
+					Adult:
+				</span>
+				<span class="forminfo">
+					<%= f.text_field :adult %>
+				</span>
+			</div>
+			<div>
+				<input type="submit"  name="Booking" value="Booking" class="btn">				
+			</div>
+		</div>
+	<% end %>
+</div>

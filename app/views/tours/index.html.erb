@@ -1,0 +1,66 @@
+<div id="content">
+
+	<div id="subhead">
+		<%= @package_location.location %> Tour Packages
+	</div>
+
+	<div>
+		<p>
+			<%= @package_location.text %> 
+		</p>
+	</div>
+
+	<% @tours.each do |tour| %>	
+
+		<div class="data">
+
+			<div class="name">
+				<%= tour.name %>
+			</div>
+
+			<div class="tourdata">
+				
+				<div>
+					<li>
+						<%= tour.days %>
+					</li>
+					<li>
+						days/
+					</li>
+					<li>
+						<%= tour.nights %>
+					</li>
+					<li>
+						nights
+					</li>
+				</div>
+				
+				<div>
+					<li>
+						Date:
+					</li>
+					<li>
+						<%= tour.date %>
+					</li>
+				</div>
+				
+				<div class="place">
+					<%= link_to "View Details", destination_tour_path(tour.id,1), :class => "tourlink" %> 				
+					<li>
+						Places:
+					</li>
+					<li>
+
+						<% tour.places.each do |place| %>
+
+						<%= place.place %>
+
+						<% end %>
+					</li>
+				</div>			
+
+			</div>
+
+		</div>
+	<% end %>
+</div>
