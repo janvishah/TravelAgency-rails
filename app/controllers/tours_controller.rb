@@ -11,8 +11,6 @@ class ToursController < ApplicationController
   		@tour = Tour.find(@tour_id)
   end
   
-  def create
-  end
   
   def save
   	@traveller = Traveller.new(params[:Traveller])
